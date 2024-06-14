@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #343a40;
+    color: white;
+    padding: 15px;
+}
+
+.sidebar-header {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #007bff;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #727577;
+    border-radius: 10px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #dee2e6;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #e9ecef;
+}
+
+/* Tambahkan gaya untuk tombol tambah mobil baru */
+.button-add {
+    background-color: rgb(20, 182, 61);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button-add:hover {
+    background-color: #155a24;
+
+}
+
+.add-car-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-car-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.add-car-form input[type="text"],
+.add-car-form input[type="number"],
+.add-car-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.add-car-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-car-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.add-car-form .error {
+    color: #dc3545;
+    margin-top: 5px;
+}
+
+.button-edit {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+/* Hover effect untuk tombol edit */
+.button-edit:hover {
+    background-color: #0056b3;
+}
+
+/* Styling untuk tombol delete */
+.button-delete {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-delete:hover {
+    background-color: #b02a37;
+}
+

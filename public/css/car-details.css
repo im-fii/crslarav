@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(151, 149, 149, 0);
+    color: rgb(107, 107, 107);
+    z-index: 1000;
+    transition: background-color 0.5s, color 0.4s;
+    margin-top: -100px;
+}
+
+header:hover {
+    background-color: white;
+    color: black;
+}
+
+header:hover .navbar .left-menu span a,
+header:hover .navbar .right-menu span a,
+header:hover .navbar .center-menu a {
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    transition: color 0.3s;
+}
+
+.navbar .left-menu,
+.navbar .right-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .left-menu span,
+.navbar .right-menu span {
+    margin: 0 10px;
+}
+
+.navbar .left-menu span a,
+.navbar .right-menu span a,
+.navbar .center-menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar .center-menu {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.car-details {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.car-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.car-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.car-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.car-info h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.car-info .price {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.car-info .rent-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.car-info .rent-btn:hover {
+    background-color: #555555;
+}
+
+.car-info .description {
+    font-size: 1em;
+    color: #000000;
+}
